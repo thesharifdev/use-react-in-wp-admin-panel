@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-function Hello() {
-  return <h1>Hello World!</h1>;
+
+// Render the React component
+const container = document.getElementById('srf-root');
+if (container) {
+    ReactDOM.render(<App />, container);
 }
-
-const container = document.getElementById("srf-root");
-
-const root = ReactDOM.createRoot(container);
-root.render(<Hello />);
