@@ -16,8 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function App() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_button_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    content: "Sample Button",
-    variant: "green",
+    content: "Sample Button edited",
+    variant: "red",
     id: "srf"
   }));
 }
@@ -183,9 +183,8 @@ __webpack_require__.r(__webpack_exports__);
 
 // Render the React component
 const container = document.getElementById('srf-root');
-if (container) {
-  react_dom__WEBPACK_IMPORTED_MODULE_2___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_App__WEBPACK_IMPORTED_MODULE_3__["default"], null), container);
-}
+const root = react_dom__WEBPACK_IMPORTED_MODULE_2___default().createRoot(container);
+root.render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_App__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }();
 /******/ })()
 ;
